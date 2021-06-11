@@ -1,7 +1,9 @@
 package Postres;
 
 import java.util.ArrayList;
+
 import Adicionales.Aderezo;
+import Leche.LecheEntera;
 
 
 public abstract class Postre {
@@ -18,13 +20,15 @@ public abstract class Postre {
         return aderezos;
     }
 
-    public void anadirAderezo(Aderezo aderezo){
+    public void addAderezos(Aderezo aderezo){
         this.aderezos.add(aderezo);
     }
     
-    public void quitarAderezo(Aderezo aderezo){
+    public void delateAderezo(Aderezo aderezo){
         this.aderezos.remove(aderezo);
     }
+    
+    public abstract void cambiarLeche(LecheEntera cambio_leche );
 
 	public String getSabor() {
 		return sabor;

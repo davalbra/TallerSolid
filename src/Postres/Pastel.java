@@ -5,6 +5,9 @@
  */
 package Postres;
 
+import Leche.LecheDescremada;
+import Leche.LecheDeslactosada;
+import Leche.LecheEntera;
 
 /**
  *
@@ -20,6 +23,13 @@ public class Pastel extends Postre{
     public String toString() {
         return "Pastel{" + "sabor= " + sabor + ", precioParcial= $" + precioParcial + ", aderezos= " + aderezos + '}';
     }
+	@Override
+	public void cambiarLeche(LecheEntera cambio_leche) {
+		if (cambio_leche.getClass()==LecheDeslactosada.class) {
+			System.out.println("No se puede usar leche deslactosada");
+		} 
+		
+	}
 
      
 }

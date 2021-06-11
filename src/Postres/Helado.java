@@ -5,6 +5,7 @@
  */
 package Postres;
 
+import Leche.LecheEntera;
 
 /**
  *
@@ -22,7 +23,11 @@ public class Helado extends Postre{
         return "Helado{" + "sabor= " + sabor + ", precioParcial= $" + precioParcial + ", aderezos= " + aderezos + '}';
     }
 
-    
+	@Override
+	public void cambiarLeche(LecheEntera cambio_leche) {
+		cambio_leche.leche();
+	}
+
 }
 
     
