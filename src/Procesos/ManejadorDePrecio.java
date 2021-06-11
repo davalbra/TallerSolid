@@ -1,6 +1,6 @@
 package Procesos;
 
-import Postres.Postre;
+import Postres.*;
 
 public class ManejadorDePrecio {
 
